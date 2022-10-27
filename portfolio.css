@@ -2,6 +2,9 @@
   font-family: 'Inter';
   src: url(./assets/fonts);
 }
+.introduction-text {
+  font-family: 'Inter Black', serif;
+}
 
 .header-welcome {
   display: flex;
@@ -14,13 +17,14 @@
   height: 20px;
   bottom: 6641px;
   right: 35px;
-  top: 62px;
+  top: 40px;
   left: 322px;
 }
 
 .introduction-text {
   font-size: 40px;
   text-align: center;
+
 }
 
 .dark-blue {
@@ -39,17 +43,18 @@
 }
 
 .green-content {
-  color: #67c599;
+  color: #36b378;
 }
 
 .description-profession {
-  font-family: Inter, serif;
+  font-family: 'Inter Medium', serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px;
   letter-spacing: 0;
   text-align: center;
   padding-bottom: 50px;
+  color: #172B4D;
 }
 
 .social-media {
@@ -69,6 +74,8 @@ aside ul li {
 }
 
 h1 {
-  padding-top: 39px;
+  font-weight: 600;
+  padding-top: 20px;
   padding-left: 24px;
+  font-size: 20px;
 }
