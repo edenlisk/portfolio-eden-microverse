@@ -36,7 +36,7 @@
   align-items: center;
   background-image: url(./assets/header-files/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .green-content {
