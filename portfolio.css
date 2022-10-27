@@ -4,9 +4,8 @@
 }
 
 .header-welcome {
-  padding-top: 39px;
+  display: inline-flex;
   color: #28352f;
-  padding-left: 24px;
 }
 
 .menu-icon {
@@ -55,10 +54,19 @@
 
 .social-media {
   display: flex;
-  justify-content: space-around;
-  width: 60%;
+  justify-content: space-between;
+  width: 63%;
 }
 
 .down-arrow {
   padding-top: 50px;
+}
+aside ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+}
+h1 {
+  padding-top: 39px;
+  padding-left: 24px;
 }
