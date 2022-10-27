@@ -11,8 +11,8 @@ It is just the main page of the website and other pages will be updated in upcom
 ***
 ## Getting started
 ### How to install
-Run the following command on cmd(windows) or terminal (Mac OS/ Linux)
-<code>git@github.com:edenlisk/portfolio-eden-microverse.git</code> and you're ready to go!!!
+Run the following command on cmd(windows) or terminal (Mac OS/ Linux) <br>
+<code>git clone git@github.com:edenlisk/portfolio-eden-microverse.git</code><br>and you're ready to go!!!
 ***
 ## 👤 Author
 * GitHub: [@edenlisk](https://github.com/edenlisk)
