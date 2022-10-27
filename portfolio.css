@@ -2,9 +2,6 @@
   font-family: 'Inter';
   src: url(./assets/fonts);
 }
-.introduction-text {
-  font-family: 'Inter Black', serif;
-}
 
 .header-welcome {
   display: flex;
@@ -24,7 +21,7 @@
 .introduction-text {
   font-size: 40px;
   text-align: center;
-
+  font-family: 'Inter Black', serif;
 }
 
 .dark-blue {
@@ -54,7 +51,7 @@
   letter-spacing: 0;
   text-align: center;
   padding-bottom: 50px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .social-media {
