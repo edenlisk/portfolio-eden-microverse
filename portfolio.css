@@ -4,7 +4,7 @@
 }
 
 .header-welcome {
-  display: inline-flex;
+  display: flex;
   color: #28352f;
 }
 
@@ -61,11 +61,13 @@
 .down-arrow {
   padding-top: 50px;
 }
+
 aside ul li {
   display: inline-block;
   list-style-type: none;
   width: 30px;
 }
+
 h1 {
   padding-top: 39px;
   padding-left: 24px;
