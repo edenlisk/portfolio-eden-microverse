@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.header-welcome {
+  display: flex;
+  color: #28352f;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.menu-icon {
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  right: 30px;
+  top: 22px;
+}
+
+.introduction-text {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Inter Black', serif;
+}
+
+.dark-blue {
+  color: #172b4d;
+}
+
+.main-page {
+  margin-top: 3.5rem;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./assets/header-files/header-illsutration-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+}
+
+.green-content {
+  color: #36b378;
+}
+
+.description-profession {
+  font-family: 'Inter Medium', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #172b4d;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.down-arrow {
+  padding-top: 50px;
+}
+
+aside ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+}
+
+h1 {
+  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 24px;
+  font-size: 20px;
+}
+
+p {
+  width: 80%;
+  font-family: "Inter", sans-serif;
+}
