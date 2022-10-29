@@ -1,7 +1,7 @@
 # Portfolio mobile version
 ***
 >Microverse portfolio mobile template. This is third in five portfolio tamplates provided in figma.
-It is just the main page of the website and other pages will be updated in upcoming projects.
+It is complete portfolio mobile version with all the features (About me & works).
 
 ## Built with
 * HTML
@@ -11,7 +11,9 @@ It is just the main page of the website and other pages will be updated in upcom
 ***
 ## Getting started
 ### How to install
-Run the following command on cmd(windows) or terminal (Mac OS/ Linux) <br>
+Follow the following steps to get this project on your local development environment <br>
+1. Install git on your pc (click here to [download](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)) <br>
+2. Run the following command on cmd(windows) or terminal (Mac OS/ Linux) <br>
 <code>git clone git@github.com:edenlisk/portfolio-eden-microverse.git</code><br>and you're ready to go!!!
 ***
 ## 👤 Author
