@@ -150,9 +150,13 @@ p {
 
 .language-section {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  float: left;
+}
+
+li.pro-lang {
+  float: left;
+  margin-left: 3rem;
+  text-align: center;
 }
 
 .indicator-icon {
