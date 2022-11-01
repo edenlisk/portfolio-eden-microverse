@@ -70,6 +70,7 @@ nav {
 .social-media {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   width: 50%;
   padding-left: 37px;
 }
@@ -270,7 +271,7 @@ button {
 
 .resume-hold {
   position: relative;
-  width: 75%;
+  width: 78%;
   height: 22rem;
   background: #ebf0ee;
   border: 2px solid #c1c7d0;
@@ -322,4 +323,69 @@ div ul li {
   width: 80%;
   height: 389px;
   background-repeat: no-repeat;
+}
+
+.form-intro {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  width: 327px;
+  height: 363px;
+  color: #172b4d;
+  margin: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 327px;
+  height: 330px;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.full-name-email {
+  width: 300px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-left: 0.8rem;
+}
+
+.text-area {
+  width: 300px;
+  height: 114px;
+  flex: none;
+  flex-grow: 0;
+  margin-left: 0.8rem;
+}
+
+article ul li {
+  list-style-type: none;
+}
+
+.social-icons-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mail-holder {
+  background: white;
+  width: 375px;
+  height: 189px;
+}
+
+.my-mail {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: center;
 }
