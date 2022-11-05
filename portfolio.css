@@ -174,19 +174,22 @@ p {
   width: 10rem;
   border: none;
   margin-bottom: 1.2rem;
+  transition: color, background, width 1s ease 0.2s;
 }
 
 .see-project:hover {
+  width: 11rem;
   background: #36b37f;
+  color: mistyrose;
 }
 
 .see-project:enabled {
-  background: #36b37f;
   border-radius: 4px;
 }
 
 .see-project:active {
   background: #008552;
+  /*background: goldenrod;*/
   letter-spacing: 0.03em;
 }
 
@@ -246,9 +249,12 @@ button {
   border: none;
   margin-top: 1rem;
   padding: 0.8rem 0.8rem 0.8rem 10px;
+  transition: width, color, background, 1s ease 0.2s;
 }
 
 .resume-button:hover {
+  width: 11rem;
+  color: mistyrose;
   background: #36b37f;
 }
 
