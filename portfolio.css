@@ -26,6 +26,10 @@ body {
   padding-left: 1rem;
 }
 
+.header-welcome.active {
+  visibility: hidden;
+}
+
 .top-navigation-bar {
   display: flex;
   justify-content: space-between;
@@ -39,6 +43,36 @@ body {
   height: 3px;
   margin: 5px auto;
   background-color: black;
+}
+
+.nav-item {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.nav-item.active {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.desktop-nav-container > .nav-item > a {
+  text-decoration: none;
+  color: #344563;
+}
+
+.top-navigation-bar.active {
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  background-color: goldenrod;
 }
 
 .menu-icon {
