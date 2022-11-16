@@ -48,10 +48,6 @@ nav {
   margin: 0 5px;
 }
 
-.desktop-nav-container {
-  visibility: hidden;
-}
-
 .menu-icon {
   padding: 1rem;
 }
@@ -60,6 +56,36 @@ nav {
   font-size: 40px;
   text-align: center;
   font-family: 'Inter Black', serif;
+}
+
+.menu-icon.active {
+  padding: 1rem;
+}
+
+.desktop-nav-container {
+  display: none;
+}
+
+.desktop-nav-container.active {
+  padding-top: 4.5rem;
+  margin-left: -4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  list-style-type: none;
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .dark-blue {
