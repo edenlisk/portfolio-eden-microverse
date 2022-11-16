@@ -23,11 +23,9 @@ body {
   font-size: 20px;
   display: flex;
   color: #28352f;
+  padding-left: 1rem;
 }
 
-.header-welcome.active {
-  visibility: hidden;
-}
 
 .top-navigation-bar {
   display: flex;
@@ -44,54 +42,14 @@ body {
   background-color: black;
 }
 
-.horizontal_bar {
-  display: none;
-  height: 4px;
-  width: 8rem;
-  background-color: black;
-}
-
-.horizontal_bar.active {
-  text-align: center;
-  visibility: visible;
-  display: block;
-  position: fixed;
-  top: 95vh;
-  left: 35vw;
-  margin: auto;
-}
-
-.nav-item {
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.nav-item.active {
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.desktop-nav-container > .nav-item > a {
-  text-decoration: none;
-  color: #344563;
-}
-
-.top-navigation-bar.active {
-  display: flex;
-  height: 100vh;
-  align-items: flex-start;
-}
-
 .menu-icon {
   padding: 1rem;
+}
+
+.introduction-text {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Inter Black', serif;
 }
 
 .menu-icon.active {
@@ -122,12 +80,6 @@ body {
 
 .menu-icon.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
-
-.introduction-text {
-  font-size: 40px;
-  text-align: center;
-  font-family: 'Inter Black', serif;
 }
 
 .dark-blue {
