@@ -44,6 +44,23 @@ body {
   background-color: black;
 }
 
+.horizontal_bar {
+  display: none;
+  height: 4px;
+  width: 8rem;
+  background-color: black;
+}
+
+.horizontal_bar.active {
+  text-align: center;
+  visibility: visible;
+  display: block;
+  position: fixed;
+  top: 95vh;
+  left: 35vw;
+  margin: auto;
+}
+
 .nav-item {
   width: 100%;
   font-family: 'Inter', sans-serif;
