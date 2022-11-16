@@ -35,6 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 5px;
+  width: 100%;
 }
 
 .bar {
@@ -68,11 +69,45 @@ body {
   color: #344563;
 }
 
+.mobile_menu_footer {
+  display: none;
+}
+
+.mobile_menu_footer.active {
+  display: block;
+  position: fixed;
+  top: 93%;
+  border-top: 1px #c1c7d0 solid;
+  width: 100%;
+  height: 5rem;
+  background: #c1c7d0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 2;
+}
+
+.horizontal_bar {
+  display: none;
+}
+
+.horizontal_bar.active {
+  display: block;
+  width: 6rem;
+  height: 3px;
+  background-color: black;
+  position: fixed;
+  top: 98%;
+  left: 40%;
+}
+
 .top-navigation-bar.active {
   display: flex;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   align-items: flex-start;
-  background-color: goldenrod;
+  margin: auto;
+  background-color: white;
 }
 
 .menu-icon {
