@@ -3,6 +3,15 @@
   src: url(assets/mobile-assets/fonts);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +19,27 @@
 }
 
 .header-welcome {
+  font-weight: 600;
+  font-size: 20px;
   display: flex;
   color: #28352f;
+  padding-left: 1rem;
+}
+
+.top-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px;
+  background-color: goldenrod;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
 }
 
 nav {
@@ -26,11 +54,7 @@ nav {
 }
 
 .menu-icon {
-  position: absolute;
-  width: 18px;
-  height: 20px;
-  right: 30px;
-  top: 22px;
+  padding: 1rem;
 }
 
 .introduction-text {
@@ -80,13 +104,6 @@ aside ul li {
   display: inline-block;
   list-style-type: none;
   width: 30px;
-}
-
-h1 {
-  font-weight: 600;
-  padding-top: 20px;
-  padding-left: 24px;
-  font-size: 20px;
 }
 
 p {
