@@ -425,18 +425,18 @@ for (let i = 1; i < 2; i += 1) {
         popupButtonsMobile,
       );
       popupWindow.style.display = null;
-      //
+      document.querySelector('body').style.overflow = 'hidden';
     });
   });
 
   popupCloseMobile.addEventListener('click', () => {
     popupBackground.classList.remove('active');
     popupWindow.style.display = 'none';
-    //
+    document.querySelector('body').style.overflow = 'absolute';
   });
   popupCloseDesktop.addEventListener('click', () => {
     popupBackground.classList.remove('active');
     popupWindow.style.display = 'none';
-    //
+    document.querySelector('body').style.overflow = 'absolute';
   });
 }
