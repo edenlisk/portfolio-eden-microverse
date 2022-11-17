@@ -283,7 +283,7 @@ for (let i = 1; i < 2; i += 1) {
   seeSourceBtn.type = 'button';
   seeSourceBtn.classList.add('see-project');
   seeSourceBtn.innerHTML = `
-        See Live
+        See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
 
@@ -307,7 +307,7 @@ for (let i = 1; i < 2; i += 1) {
   seeSourceBtnDesktop.type = 'button';
   seeSourceBtnDesktop.classList.add('see-project');
   seeSourceBtnDesktop.innerHTML = `
-        See Live
+        See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
 
