@@ -14,8 +14,8 @@ body {
 
 .popup {
   background: white;
-  margin: auto;
-  width: 70%;
+  margin: 1rem auto;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .mobile_popup_image {
-  width: 100%;
+  width: 80vw;
 }
 
 .desktop_popup_image {
@@ -54,6 +54,22 @@ body {
 
 .popup_images {
   align-self: center;
+}
+
+.language-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mobile_language_section > .language-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-left: 1rem;
 }
 
 .desktop_language_section {
@@ -73,7 +89,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  width: 100%;
+  max-width: 80%;
   color: #172b4d;
   margin: auto;
 }
@@ -94,6 +110,7 @@ body {
   display: flex;
   gap: 0.5rem;
   justify-content: space-around;
+  padding: 0 0.5rem;
 }
 
 * {
@@ -334,13 +351,6 @@ p {
   line-height: 16px;
 }
 
-.language-section {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .indicator-icon {
   margin-bottom: 3.8rem;
 }
@@ -389,16 +399,14 @@ p {
 }
 
 .popup_background.active {
+  position: fixed;
+  z-index: 11100;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 11100;
+  overflow: auto;
 }
 
 .about-me {
@@ -641,8 +649,8 @@ article ul li {
 
   .popup {
     background: white;
-    margin: auto;
-    min-width: 885px;
+    margin: 2rem auto;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -677,6 +685,7 @@ article ul li {
 
   .desktop_popup_image {
     display: block;
+    width: 98%;
   }
 
   .popup_images {
@@ -689,6 +698,15 @@ article ul li {
 
   .desktop_language_section {
     display: block;
+  }
+
+  .desktop_language_section > .language-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-left: 1rem;
   }
 
   .container_for_header_container_and_popup_buttons {
@@ -732,11 +750,22 @@ article ul li {
     font-style: normal;
     color: #344563;
     flex-grow: 0;
-    height: 151px;
+    max-height: 100%;
   }
 
   .popup_buttons_mobile {
     display: none;
+  }
+
+  .popup_background.active {
+    position: fixed;
+    z-index: 11100;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
   }
 
   .menu-icon {

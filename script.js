@@ -71,6 +71,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
@@ -91,6 +92,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
@@ -111,6 +113,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
@@ -131,6 +134,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
@@ -151,6 +155,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
@@ -171,6 +176,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
+    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
 ];
@@ -279,37 +285,75 @@ for (let i = 1; i < 2; i += 1) {
   const popupButtonsDesktop = document.createElement('div');
   popupButtonsDesktop.classList.add('popup_buttons_desktop');
 
+
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.type = 'button';
   seeSourceBtn.classList.add('see-project');
-  seeSourceBtn.innerHTML = `
+
+  const seeSourceLinkMobile = document.createElement('a');
+  seeSourceLinkMobile.style.color = 'white';
+  seeSourceLinkMobile.style.textDecoration = 'none';
+  seeSourceLinkMobile.href = projectInfo[i].importantLinks[1];
+  seeSourceLinkMobile.innerHTML = `
         See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
+
+  seeSourceBtn.appendChild(
+    seeSourceLinkMobile
+  );
 
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.type = 'button';
   seeLiveBtn.classList.add('see-project');
-  seeLiveBtn.innerHTML = `
+
+  const seeLiveLinkMobile = document.createElement('a');
+  seeLiveLinkMobile.style.color = 'white';
+  seeLiveLinkMobile.style.textDecoration = 'none';
+  seeLiveLinkMobile.href = projectInfo[i].importantLinks[0];
+  seeLiveLinkMobile.innerHTML = `
         See Live
           <span><img src="assets/popup/icons/see-live-icon.svg"></span>
     `;
+
+  seeLiveBtn.appendChild(
+    seeLiveLinkMobile
+  );
 
   const seeLiveBtnDesktop = document.createElement('button');
   seeLiveBtnDesktop.type = 'button';
   seeLiveBtnDesktop.classList.add('see-project');
-  seeLiveBtnDesktop.innerHTML = `
+
+  const seeLiveLinkDesktop = document.createElement('a');
+  seeLiveLinkDesktop.style.color = 'white';
+  seeLiveLinkDesktop.style.textDecoration = 'none';
+  seeLiveLinkDesktop.href = projectInfo[i].importantLinks[0];
+  seeLiveLinkDesktop.innerHTML = `
         See Live
           <span><img src="assets/popup/icons/see-live-icon.svg"></span>
     `;
 
+  // Appending link into btn
+  seeLiveBtnDesktop.appendChild(
+    seeLiveLinkDesktop
+  );
+
   const seeSourceBtnDesktop = document.createElement('button');
   seeSourceBtnDesktop.type = 'button';
   seeSourceBtnDesktop.classList.add('see-project');
-  seeSourceBtnDesktop.innerHTML = `
+
+  const seeSourceLinkDesktop = document.createElement('a');
+  seeSourceLinkDesktop.style.color = 'white';
+  seeSourceLinkDesktop.style.textDecoration = 'none';
+  seeSourceLinkDesktop.href = projectInfo[i].importantLinks[1];
+  seeSourceLinkDesktop.innerHTML = `
         See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
+  // Appending link into btn
+  seeSourceBtnDesktop.appendChild(
+    seeSourceLinkDesktop
+  );
 
   popupButtonsDesktop.append(
     seeLiveBtnDesktop,
