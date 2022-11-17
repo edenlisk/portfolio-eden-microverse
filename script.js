@@ -285,7 +285,6 @@ for (let i = 1; i < 2; i += 1) {
   const popupButtonsDesktop = document.createElement('div');
   popupButtonsDesktop.classList.add('popup_buttons_desktop');
 
-
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.type = 'button';
   seeSourceBtn.classList.add('see-project');
@@ -293,14 +292,14 @@ for (let i = 1; i < 2; i += 1) {
   const seeSourceLinkMobile = document.createElement('a');
   seeSourceLinkMobile.style.color = 'white';
   seeSourceLinkMobile.style.textDecoration = 'none';
-  seeSourceLinkMobile.href = projectInfo[i].importantLinks[1];
+  seeSourceLinkMobile.href = [projectInfo[i].importantLinks[1]];
   seeSourceLinkMobile.innerHTML = `
         See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
 
   seeSourceBtn.appendChild(
-    seeSourceLinkMobile
+    seeSourceLinkMobile,
   );
 
   const seeLiveBtn = document.createElement('button');
@@ -310,14 +309,14 @@ for (let i = 1; i < 2; i += 1) {
   const seeLiveLinkMobile = document.createElement('a');
   seeLiveLinkMobile.style.color = 'white';
   seeLiveLinkMobile.style.textDecoration = 'none';
-  seeLiveLinkMobile.href = projectInfo[i].importantLinks[0];
+  seeLiveLinkMobile.href = [projectInfo[i].importantLinks[0]];
   seeLiveLinkMobile.innerHTML = `
         See Live
           <span><img src="assets/popup/icons/see-live-icon.svg"></span>
     `;
 
   seeLiveBtn.appendChild(
-    seeLiveLinkMobile
+    seeLiveLinkMobile,
   );
 
   const seeLiveBtnDesktop = document.createElement('button');
@@ -327,7 +326,7 @@ for (let i = 1; i < 2; i += 1) {
   const seeLiveLinkDesktop = document.createElement('a');
   seeLiveLinkDesktop.style.color = 'white';
   seeLiveLinkDesktop.style.textDecoration = 'none';
-  seeLiveLinkDesktop.href = projectInfo[i].importantLinks[0];
+  seeLiveLinkDesktop.href = [projectInfo[i].importantLinks[0]];
   seeLiveLinkDesktop.innerHTML = `
         See Live
           <span><img src="assets/popup/icons/see-live-icon.svg"></span>
@@ -335,7 +334,7 @@ for (let i = 1; i < 2; i += 1) {
 
   // Appending link into btn
   seeLiveBtnDesktop.appendChild(
-    seeLiveLinkDesktop
+    seeLiveLinkDesktop,
   );
 
   const seeSourceBtnDesktop = document.createElement('button');
@@ -345,14 +344,14 @@ for (let i = 1; i < 2; i += 1) {
   const seeSourceLinkDesktop = document.createElement('a');
   seeSourceLinkDesktop.style.color = 'white';
   seeSourceLinkDesktop.style.textDecoration = 'none';
-  seeSourceLinkDesktop.href = projectInfo[i].importantLinks[1];
+  seeSourceLinkDesktop.href = [projectInfo[i].importantLinks[1]];
   seeSourceLinkDesktop.innerHTML = `
         See Source
           <span><img src="assets/popup/icons/see-source-icon.svg"></span>
     `;
   // Appending link into btn
   seeSourceBtnDesktop.appendChild(
-    seeSourceLinkDesktop
+    seeSourceLinkDesktop,
   );
 
   popupButtonsDesktop.append(
