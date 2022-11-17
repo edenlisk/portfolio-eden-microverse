@@ -425,15 +425,18 @@ for (let i = 1; i < 2; i += 1) {
         popupButtonsMobile,
       );
       popupWindow.style.display = null;
+      //
     });
   });
 
   popupCloseMobile.addEventListener('click', () => {
     popupBackground.classList.remove('active');
     popupWindow.style.display = 'none';
+    //
   });
   popupCloseDesktop.addEventListener('click', () => {
     popupBackground.classList.remove('active');
     popupWindow.style.display = 'none';
+    //
   });
 }
