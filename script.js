@@ -503,17 +503,34 @@ form.addEventListener('submit', (e) => {
   } else if (regex.test(emailAddress.value) === false) {
     messages.push('⛔ Incorrect Email');
     validation.innerHTML = messages.join(',');
-  } else if (regex.test(emailAddress.value) === false) {
-    validation.innerHTML = messages.join(',');
   } else if (emailAddress.value.length >= 100) {
     messages.push('⛔ Email Address is too long');
     validation.innerHTML = messages.join(',');
   } else if (message.value.length === 0 || message.value.length === null) {
     messages.push('⛔ Text area is Required');
     validation.innerHTML = messages.join(',');
-  } else if (message.value.length < 20) {
-    messages.push('⛔ Message cannot be less than 20 characters');
-    validation.innerHTML = messages.join(',');
+  } else {
+    validation.innerHTML = '';
   }
   e.preventDefault();
 });
+
+let localInfo = {
+  fullName: '',
+  email: '',
+  comment: '',
+};
+
+if (localStorage.getItem('localInfo') != null) {
+  localInfo = JSON.parse(localStorage.getItem('localInfo'));
+  name.value = localInfo.fullName;
+  emailAddress.value = localInfo.email;
+  message.value = localInfo.comment;
+} else {
+  form.addEventListener('change', () => {
+    localInfo.fullName = name.value;
+    localInfo.email = emailAddress.value;
+    localInfo.comment = message.value;
+    localStorage.setItem('localInfo', JSON.stringify(localInfo));
+  });
+}
