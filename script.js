@@ -503,18 +503,13 @@ form.addEventListener('submit', (e) => {
   } else if (regex.test(emailAddress.value) === false) {
     messages.push('⛔ Incorrect Email');
     validation.innerHTML = messages.join(',');
-  } else if (regex.test(emailAddress.value) === true) {
-    validation.innerHTML = messages.join(',');
   } else if (emailAddress.value.length >= 100) {
     messages.push('⛔ Email Address is too long');
     validation.innerHTML = messages.join(',');
   } else if (message.value.length === 0 || message.value.length === null) {
     messages.push('⛔ Text area is Required');
     validation.innerHTML = messages.join(',');
-  } else if (message.value.length < 20) {
-    messages.push('⛔ Message cannot be less than 20 characters');
-    validation.innerHTML = messages.join(',');
-  }else {
+  } else {
     validation.innerHTML = '';
   }
   e.preventDefault();
