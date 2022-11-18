@@ -6,12 +6,11 @@ It is complete responsive portfolio website for all devices (min-width: 768px) w
 ## Built with
 * HTML
 * CSS
+* JavaScript
 * media queries  
 * Microverse [linters](https://github.com/microverseinc/linters-config/tree/master/html-css)
 * [Figma](figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A988)
 ***
-## Live Demo
-click [here](https://edenlisk.github.io/portfolio-eden-microverse/) to view live demo
 ***
 ## Getting started
 ### How to install
