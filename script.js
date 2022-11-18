@@ -483,3 +483,37 @@ for (let i = 1; i < 2; i += 1) {
     document.querySelector('body').style.overflow = 'absolute';
   });
 }
+const emailAddress = document.querySelector('.email');
+const form = document.querySelector('.contact-form');
+const name = document.querySelector('.fullName');
+const message = document.querySelector('.text-area');
+const validation = document.createElement('span');
+validation.classList.add('errorMessage');
+
+form.addEventListener('submit', (e) => {
+  form.appendChild(validation);
+  const messages = [];
+  const regex = /^([a-z0-9_-]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  if (name.value.length === 0 || name.value.length === null) {
+    messages.push('⛔ Name is Required');
+    validation.innerHTML = messages.join(',');
+  } else if (name.value.length >= 50) {
+    messages.push('⛔ Name is too long');
+    validation.innerHTML = messages.join(',');
+  } else if (regex.test(emailAddress.value) === false) {
+    messages.push('⛔ Incorrect Email');
+    validation.innerHTML = messages.join(',');
+  } else if (regex.test(emailAddress.value) === false) {
+    validation.innerHTML = messages.join(',');
+  } else if (emailAddress.value.length >= 100) {
+    messages.push('⛔ Email Address is too long');
+    validation.innerHTML = messages.join(',');
+  } else if (message.value.length === 0 || message.value.length === null) {
+    messages.push('⛔ Text area is Required');
+    validation.innerHTML = messages.join(',');
+  } else if (message.value.length < 20) {
+    messages.push('⛔ Message cannot be less than 20 characters');
+    validation.innerHTML = messages.join(',');
+  }
+  e.preventDefault();
+});

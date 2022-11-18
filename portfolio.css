@@ -558,7 +558,8 @@ form {
   width: 327px;
   height: 330px;
   padding-left: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
+  z-index: 11000;
 }
 
 .full-name-email {
