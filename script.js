@@ -530,5 +530,10 @@ if (localStorage.getItem('localInfo') != null) {
   emailAddress.value = localInfo.email;
   message.value = localInfo.comment;
 } else {
-  //
+  form.addEventListener('submit', () => {
+    localInfo.fullName = name.value;
+    localInfo.email = emailAddress.value;
+    localInfo.comment = message.value;
+    localStorage.setItem('localInfo', JSON.stringify(localInfo));
+  });
 }
