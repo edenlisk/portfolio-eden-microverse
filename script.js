@@ -527,7 +527,7 @@ if (localStorage.getItem('localInfo') != null) {
   emailAddress.value = localInfo.email;
   message.value = localInfo.comment;
 } else {
-  form.addEventListener('submit', () => {
+  form.addEventListener('change', () => {
     localInfo.fullName = name.value;
     localInfo.email = emailAddress.value;
     localInfo.comment = message.value;
