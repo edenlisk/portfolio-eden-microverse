@@ -508,12 +508,6 @@ form.addEventListener('submit', (e) => {
   } else if (emailAddress.value.length >= 100) {
     messages.push('⛔ Email Address is too long');
     validation.innerHTML = messages.join(',');
-  } else if (message.value.length === 0 || message.value.length === null) {
-    messages.push('⛔ Text area is Required');
-    validation.innerHTML = messages.join(',');
-  } else if (message.value.length < 20) {
-    messages.push('⛔ Message cannot be less than 20 characters');
-    validation.innerHTML = messages.join(',');
-  }
+  } // validate message
   e.preventDefault();
 });
