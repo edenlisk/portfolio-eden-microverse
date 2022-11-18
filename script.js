@@ -517,3 +517,18 @@ form.addEventListener('submit', (e) => {
   }
   e.preventDefault();
 });
+
+let localInfo = {
+  fullName: '',
+  email: '',
+  comment: '',
+};
+
+if (localStorage.getItem('localInfo') != null) {
+  localInfo = JSON.parse(localStorage.getItem('localInfo'));
+  name.value = localInfo.fullName;
+  emailAddress.value = localInfo.email;
+  message.value = localInfo.comment;
+} else {
+  //
+}
