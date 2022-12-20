@@ -71,7 +71,7 @@ const projectInfo = [
       + 'industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of '
       + 'type and scrambled it 1960s with the relea',
     popupCardButtons: ['See Live', 'See Source'],
-    importantLinks: ['https://edenlisk.github.io/', 'https://github.com/edenlisk/portfolio-eden-microverse'],
+    importantLinks: ['https://edenlisk.github.io/ToDoList/dist/', 'https://github.com/edenlisk/ToDoList'],
     popupCardButtonsIcon: ['./assets/popup/icons/see-live-icon.svg', './assets/popup/icons/see-source-icon.svg'],
   },
   {
